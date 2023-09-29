@@ -1,0 +1,337 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-size: 18px;
+    --gold:#D5966C;
+    --black:#151515;
+    --grey:#444444;
+    --white:#FFFFFF;
+    --shoulder:Big Shoulders Display;
+    --outfit:Outfit;
+}
+body{
+    min-width: 100vw;
+}
+header{
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: var(--white);
+}
+.black-screen{
+    background-color: var(--black);
+    width: 32%;
+    height: 44.45rem;
+}
+.heading-image{
+    background-image: url("image/1.png");
+    width: 30rem;
+    height: 44.45rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header-body{
+    position: absolute;
+    display: flex;
+    top: 11rem;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-start;
+}
+.header-name{
+    color: var(--white);
+    mix-blend-mode: difference;
+    font-family: var(--shoulder);
+    font-size: 5.34rem;
+    line-height: 4.89rem;
+    width: 25rem;
+}
+.header-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.5rem;
+}
+.header-detail p{
+    color: var(--grey);
+    font-family: var(--outfit);
+    font-size: 1.23rem;
+    line-height: 1.78rem;
+    width: 19rem;
+}
+.btn{
+    text-decoration: none;
+    width: 14.45rem;
+    height: 4rem;
+    background-color: var(--black);
+    font-family: var(--shoulder);
+    font-size: 1.25rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+}
+.btn-icon{
+    width: 3.1rem;
+    height: 100%;
+    background-color: var(--gold);
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn:hover{
+    background-color: var(--gold);
+}
+.btn:hover i{
+    background-color: var(--black);
+}
+
+/* main section */
+main{
+    margin: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.main-section-1{
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap:5rem;
+    align-items: center;
+}
+.section-1-pic{
+    background-image: url("image/2.png");
+    height: 22rem;
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+}
+.section-1-text-body{
+    width: 40%;
+}
+.text-body-head{
+    font-family: var(--shoulder);
+    font-size: 3.34rem;
+    line-height: 3.34rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.section-1-text-body p{
+    font-family: var(--outfit);
+    color: var(--grey);
+    font-size: 1.23rem;
+    line-height: 1.78rem;
+}
+.main-section-2{
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.section-2-left{
+    background-image: url("image/3.png");
+    height: 40rem;
+    width: 55%;
+    background-size: cover;
+    background-position: center;
+}
+.section-2-right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.section-2-right-1{
+    width: 100%;
+    height: 50%;
+    background-image: url("image/4.png");
+    background-position: center;
+    background-size: cover;
+}
+.section-2-right-2{
+    width: 100%;
+    height: 50%;
+    background-color: var(--black);
+    padding: 1rem;
+}
+.right-2-head{
+    font-family: var(--shoulder);
+    font-size: 3.34rem;
+    line-height: 3.34rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.section-2-right-2 p{
+    font-family: var(--outfit);
+    color: var(--white);
+    font-size: 1.23rem;
+    line-height: 1.78rem;
+}
+/* footer section */
+
+footer{
+    width: 100%;
+    background-color: var(--black);
+    padding: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.footer-logo{
+    width: 9rem;
+    height: 3.1rem;
+}
+.footer-content{
+    color: var(--white);
+    font-size: 1rem;
+    width: 26.88rem;
+    padding: .5rem;
+    line-height: 1.56rem;
+}
+.footer-social-media{
+    color: var(--white);
+}
+.footer-social-media i{
+    margin-left: .5rem;
+}
+.footer-social-media i:hover{
+    color: var(--gold);
+}
+@media(max-width:950px){
+    :root{
+        font-size: 16px;
+    }
+    .black-screen{
+        width: 0%;
+        display: none;
+    }
+    .heading-image{
+        width: 27.3rem;
+        height: 43.75rem;
+    }
+    .header-name{
+        width: 21.19rem;
+        font-size: 4.38rem;
+        line-height: 4.1rem;
+        color: var(--black);
+        mix-blend-mode: normal;
+    }
+    .header-body{
+        flex-direction: column;
+        align-items: flex-end;
+        width: 45rem;
+        padding-right: 2rem;
+        gap: 1rem;
+        top: 10rem;
+    }
+    .header-detail{
+        gap: 1.5rem;
+    }
+    .header-detail p{
+        font-size: 1.12rem;
+        line-height: 1.75rem;
+        width: 21.19rem;
+    }
+    .text-body-head{
+        font-size: 3.125rem;
+        line-height: 2.8rem;
+    }
+    .section-1-text-body p{
+        font-size: 1.12rem;
+        line-height: 1.75rem;
+    }
+    .right-2-head{
+        font-size: 3.125rem;
+        line-height: 2.8rem;
+    }
+    .section-2-right-2 p{
+        font-size: 1.12rem;
+        line-height: 1.75rem;
+    }
+    .footer-logo{
+        height: 2.5rem;
+        width: 6.9rem;
+    }
+    .footer-content{
+        line-height: 1.63rem;
+        width: 17.56rem;
+        padding:0;
+    }
+}
+
+@media (max-width:650px){
+    header{
+        flex-direction: column;
+        position: static;
+    }
+    .header-body{
+        position: static;
+    }
+    .heading-image{
+        width: 100%;    
+        height: 15rem;
+        background-size: cover;
+        background-position: center;
+    }
+    .header-body{
+        margin: 0;
+        width: 100%;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .header-name{
+        font-size: 3.75rem;
+        line-height: 3.5rem;
+    }
+    .main-section-1{
+        width: 100%;
+        flex-direction: column;
+        gap: 3rem;
+        margin: 0;
+    }
+    .section-1-pic{
+        width: 100%;
+        height: 25rem;
+    }
+    .section-1-text-body{
+        width: 100%;
+        padding: 1rem;
+    }
+    .main-section-2{
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+    }
+    .section-2-left{
+        width: 100%;
+        height: 20rem;
+        background-size: fill;
+        background-position: 0 80%;
+    }
+    .section-2-right{
+        width: 100%;
+    }
+    .section-2-right-1{
+        height: 12.5rem;
+    }
+    .section-2-right-2{
+        padding: 2rem;
+    }
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+}
