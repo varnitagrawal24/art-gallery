@@ -12,9 +12,6 @@
     --shoulder:Big Shoulders Display;
     --outfit:Outfit;
 }
-body{
-    min-width: 100vw;
-}
 .map{
     width: 100%;
     position: relative;
